@@ -1,79 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+a {
+  color: #0077cc;           /* Cor de destaque */
+  font-weight: bold;        /* Negrito por padrão */
+  text-decoration: none;    /* Remove o sublinhado */
+  transition: color 0.3s;
 }
 
-body {
-    font-family: arial, sans-serif;
-    line-height:  1.6 ;
-    background-color: #f9f9f9;
-    color: #333;
+a:hover {
+  color: #005999;
 }
 
-.header {
-    background-color: #0d47a1;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+a:visited {
+  color: #663399;           /* Exemplo: roxo para visitado */
+  font-weight: normal;
 }
 
-.beneficios {
-    display: flex;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
-    background-color: #fff;
+main section p:first-of-type::first-letter {
+  font-size: 3em;                  /* 3x maior que o padrão */
+  font-family: "Georgia", serif;   /* Fonte diferente */
+  float: left;                     /* Flutua à esquerda */
+  margin-right: 8px;               /* Espaçamento do texto */
+  line-height: 1;                  /* Ajusta altura da linha */
 }
 
-.texto-beneficios {
-    width: 70%;
-    padding: 30px;
+.menu-design ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.titulo-beneficios {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e3f2fd;
+.menu-design li {
+  border-top: 2px solid #ccc;   /* Borda superior em todos os itens */
+  padding: 10px;
 }
 
-.participação {
-    display: flex;
-    border-top: none;
-    border-bottom: 2px solid #ccc;
-    background-color: #fff;
+/* Apenas o último item com borda inferior */
+.menu-design li:last-child {
+  border-bottom: 2px solid #ccc;
 }
 
-.item-participação, .titulo-participação {
-    width: 50%;
-    padding: 30%;
+.menu-design a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.titulo-particpação {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f9f9f9;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    background-color: #0d47a1;
-    color: white;
-    padding: 20px;
-}
-
-.footer a{
-    color: white;
-    text-decoration: none;
-    width: 120px;
-    text-align: center;
-}
-
-.footer a:hover{
-    text-decoration: underline;
+.menu-design a:hover {
+  color: #005999;
 }
